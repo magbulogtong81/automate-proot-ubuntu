@@ -5,7 +5,7 @@ apt update
 apt upgrade -y
 
 echo "installing needed packages..."
-apt install xfce4 tightvncviewer nano wget sudo thunar -y
+apt install xfce4 tightvncserver nano wget sudo thunar -y
 
 echo "please enter new username"
 
