@@ -2,8 +2,6 @@
 
 path="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu"
 
-#update termux package
-pkg update && pkg upgrade -y
 #install proot
 pkg install proot proot-distro -y
 
