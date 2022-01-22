@@ -9,5 +9,5 @@ pkg install proot proot-distro -y
 proot-distro install ubuntu
 printf "\033[;32mINFO\033[0m [going to proot environment]\n"
 proot-distro login ubuntu --termux-home << EOF
-bash packages.sh
+bash ~/automate-proot-ubuntu/packages.sh
 EOF
