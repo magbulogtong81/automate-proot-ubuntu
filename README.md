@@ -5,4 +5,5 @@ use this script to automate installing ubuntu on termux
 
 *How to use*
 
-execute `bash install-ubuntu-desktop.sh` and wait for it to finish
+execute `pkg install wget -y && wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/install-ubuntu-desktop.sh && bash install*sh`
+and wait for it to finish
