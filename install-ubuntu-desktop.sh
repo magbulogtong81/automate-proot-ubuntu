@@ -1,13 +1,17 @@
 #!/data/data/com.termux/files/usr/bin/bash
+#going to home dir
+cd ~
 
-path="/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu"
+pkg update && pkg upgrade -y && apt install wget git
+
+wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
 
 #install proot
-pkg install proot proot-distro -y
+apt install proot proot-distro binutils -y
 
 #install ubuntu
 proot-distro install ubuntu
 printf "\033[;32mINFO\033[0m [going to proot environment]\n"
 proot-distro login ubuntu --termux-home << EOF
-bash ~/automate-proot-ubuntu/packages.sh
+bash ~/packages.sh
 EOF
