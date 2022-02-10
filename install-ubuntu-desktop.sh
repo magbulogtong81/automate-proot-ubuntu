@@ -2,7 +2,7 @@
 #going to home dir
 cd ~
 
-pkg update && pkg upgrade -y && apt install wget git -y
+pkg update -y && pkg upgrade -y && apt install wget git -y
 
 wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
 
