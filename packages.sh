@@ -147,11 +147,11 @@ echo "\"./proot-start.sh\""
 
 ##main execution
 echo "checking and installing updates..."
-#apt update
-#apt upgrade -y
+apt update
+apt upgrade -y
 
 echo "installing needed packages..."
-#apt install xfce4 tightvncserver nano wget sudo thunar -y
+apt install xfce4 tightvncserver nano wget sudo thunar -y
 browser
 setupuser
 setupsudo

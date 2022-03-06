@@ -2,12 +2,12 @@
 #going to home dir
 cd ~
 
-#pkg update -y && pkg upgrade -y && apt install wget git -y
+pkg update -y && pkg upgrade -y && apt install wget git -y
 
-#wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
+wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
 
 #install proot
-#apt install proot proot-distro binutils -y
+apt install proot proot-distro binutils -y
 
 #install ubuntu
 proot-distro install ubuntu
