@@ -4,7 +4,12 @@ cd ~
 
 pkg update -y && pkg upgrade -y && apt install wget git -y
 
-wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
+if [ -f "./packages.sh" ]; then
+ printf "\033[;32mINFO [needed files already downloaded. proceeding...]\033[0m \n"
+else
+ printf "\033[;32mINFO  [downloading files] \033[0m\n"
+ wget https://raw.githubusercontent.com/magbulogtong81/automate-proot-ubuntu/main/packages.sh
+fi
 
 #install proot
 apt install proot proot-distro binutils -y
