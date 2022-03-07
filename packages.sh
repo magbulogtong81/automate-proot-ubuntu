@@ -102,8 +102,6 @@ function setupsudo(){
 while true
 do
 
-echo "clearing terminal"
-clear
 echo "we need to manually setup user previlege config"
 echo "a text editor will pop-up to do so"
 echo "underneath the line \"root    ALL=(ALL:ALL) ALL\","
